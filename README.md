@@ -7,15 +7,25 @@
 
 ## Description
 
-TODO: Description
+A paper-thin wrapper around [marc_alephsequential](http://github.com/billdueberb/marc_alephsequential) for use in the
+[traject](http://github.com/jrochkind/traject/) indexing software.
 
-## Features
+Will transparently deal with gzipped files so long as their name ends in '.gz'.
+
+For features of the reader itself, see [marc_alephsequential](http://github.com/billdueberb/marc_alephsequential).
+
 
 ## Examples
 
-    require 'traject_alephsequential_reader'
+```ruby
 
-## Requirements
+# A sample traject configuration file to use an alephseqential source
+require 'traject_alephsequential_reader'
+
+settings do
+  store "reader_class_name", "Traject::AlephSequentialReader"
+end
+```
 
 ## Install
 
