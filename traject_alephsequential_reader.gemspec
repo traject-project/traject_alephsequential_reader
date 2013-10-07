@@ -4,9 +4,9 @@ require File.expand_path('../lib/traject_alephsequential_reader/version', __FILE
 
 Gem::Specification.new do |gem|
   gem.name          = "traject_alephsequential_reader"
-  gem.version       = TrajectAlephsequentialReader::VERSION
-  gem.summary       = %q{TODO: Summary}
-  gem.description   = %q{TODO: Description}
+  gem.version       = Traject::AlephsequentialReader::VERSION
+  gem.summary       = %q{Traject reader for AlephSequential files using stock ruby-marc}
+  gem.description   = %q{A basic traject reader to process Ex Libris's AlephSequential format on input}
   gem.license       = "MIT"
   gem.authors       = ["Bill Dueber"]
   gem.email         = "bill@dueber.com"

@@ -1,1 +1,2 @@
-require 'traject_alephsequential_reader/version'
+require 'traject/alephsequential_reader/version'
+
