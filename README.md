@@ -7,12 +7,12 @@
 
 ## Description
 
-A paper-thin wrapper around [marc_alephsequential](http://github.com/billdueberb/marc_alephsequential) for use in the
+A paper-thin wrapper around [marc_alephsequential](http://github.com/billdueber/marc_alephsequential) for use in the
 [traject](http://github.com/jrochkind/traject/) indexing software.
 
 Will transparently deal with gzipped files so long as their name ends in '.gz'.
 
-For features of the reader itself, see [marc_alephsequential](http://github.com/billdueberb/marc_alephsequential).
+For features of the reader itself, see [marc_alephsequential](http://github.com/billdueber/marc_alephsequential).
 
 
 ## Examples
