@@ -10,7 +10,7 @@ module Traject
     def initialize(input_stream, settings)
       @settings = settings
       @input_stream = input_stream
-      if settings['command_line.filename'] =~ /\.gz$/
+      if settings['command_line.filename'] =~ /\.gz$/ && !(@input_stream.is_a?  Zlib::GzipReader)
         @input_stream = Zlib::GzipReader.new(@input_stream, :external_encoding => "UTF-8")
       end
   
