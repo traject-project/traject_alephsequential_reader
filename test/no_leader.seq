@@ -1,0 +1,30 @@
+013594822 001   L 013594822
+013594822 005   L 20150416133736.0
+013594822 008   L 140825s2014^^^^ja^^^^^^^^^^^^000^0^jpn^d
+013594822 020   L $$a9784532262556
+013594822 020   L $$a4532262550
+013594822 035   L $$a(OCoLC)888948216
+013594822 035   L $$a(OCoLC)ocn888948216
+013594822 040   L $$aTRCLS$$beng$$cTRCLS$$dOCLCO$$dOCLCQ
+013594822 084   L $$a451.28$$2njb/9
+013594822 1001  L $$601$$aAndō, Kiyoshi.
+013594822 1001  L $$601$$a安藤淳.$$9jpn
+013594822 24510 L $$602$$aTenki yohō wa kono hi uso o tsuku /$$cAndō Kiyoshi.
+013594822 24510 L $$602$$a天気予報はこの日「ウソ」をつく /$$c安藤淳著.$$9jpn
+013594822 260   L $$603$$aTōkyō :$$bNihonkeizaishinbunshuppansha,$$c2014.
+013594822 260   L $$603$$a東京 :$$b日本経済新聞出版社,$$c2014.$$9jpn
+013594822 300   L $$a187 pages ;$$c18 cm.
+013594822 336   L $$atext$$btxt$$2rdacontent
+013594822 337   L $$aunmediated$$bn$$2rdamedia
+013594822 338   L $$avolume$$bnc$$2rdacarrier
+013594822 4901  L $$604$$aNikkei puremia shirīzu ;$$v255
+013594822 4901  L $$604$$a日経プレミアシリーズ ;$$v255$$9jpn
+013594822 65007 L $$605$$aTenki yohō.$$2jlabsh/4
+013594822 65007 L $$605$$a天気予報.$$2jlabsh/4$$9jpn
+013594822 830 0 L $$606$$aNikkei puremia shirīzu ;$$v255.
+013594822 830 0 L $$606$$a日経プレミアシリーズ ;$$v255.$$9jpn
+013594822 8564  L $$uhttp://www.bookportal.jp/trcno/14041530/?partnerid=oclc&siteid=oclc$$zJapanese record available for display
+013594822 970   L $$aBK$$bBook
+013594822 971   L $$aMiU
+013594822 973   L $$aAC$$bavail_circ
+013594822 974   L $$a39015094298646$$bHATCH$$cASIA$$f01$$sRE

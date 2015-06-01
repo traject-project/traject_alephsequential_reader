@@ -1,22 +1,7 @@
-require 'rubygems'
+gem 'minitest' # I feel like this messes with bundler, but only way to get minitest to shut up
+require 'minitest/autorun'
+require 'minitest/spec'
 
-begin
-  require 'bundler'
-rescue LoadError => e
-  warn e.message
-  warn "Run `gem install bundler` to install Bundler."
-  exit e.status_code
-end
+require 'traject/alephsequential_reader'
 
-begin
-  Bundler.setup(:default, :development, :test)
-rescue Bundler::BundlerError => e
-  warn e.message
-  warn "Run `bundle install` to install missing gems."
-  exit e.status_code
-end
-
-require 'test/unit'
-
-class Test::Unit::TestCase
-end
+STDERR.sync = true

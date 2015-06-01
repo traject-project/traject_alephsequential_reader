@@ -5,6 +5,9 @@ require 'yell'
 
 module Traject
   class AlephSequentialReader
+
+    attr_accessor :settings
+
     include Enumerable
 
     def initialize(input_stream, settings)
@@ -13,23 +16,31 @@ module Traject
       if settings['command_line.filename'] =~ /\.gz$/ && !(@input_stream.is_a?  Zlib::GzipReader)
         @input_stream = Zlib::GzipReader.new(@input_stream, :external_encoding => "UTF-8")
       end
-  
+
       @internal_reader = MARC::AlephSequential::Reader.new(@input_stream)
     end
 
     def logger
       @logger ||= (settings[:logger] || Yell.new(STDERR, :level => "gt.fatal")) # null logger)
-    end    
+    end
 
     def each
       unless block_given?
         return enum_for(:each)
       end
-  
-      @internal_reader.each {|r| yield r}
-    end
 
+      ir = @internal_reader.each # iterator
+      while true
+        begin
+          r =  ir.next
+          yield r
+        rescue  MARC::AlephSequential::Error => e
+          logger.error(e)
+          next
+        rescue StopIteration
+          break
+        end
+      end
+    end
   end
 end
-  
-  
