@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_dependency 'marc', '~>1'
-  gem.add_dependency 'marc_alephsequential', '~>1'
+  gem.add_dependency 'marc_alephsequential', '~>2'
   gem.add_dependency 'yell'
 
   gem.add_development_dependency 'bundler'

@@ -3,5 +3,3 @@ require 'minitest/autorun'
 require 'minitest/spec'
 
 require 'traject/alephsequential_reader'
-
-STDERR.sync = true

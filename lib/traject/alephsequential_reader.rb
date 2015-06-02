@@ -29,16 +29,11 @@ module Traject
         return enum_for(:each)
       end
 
-      ir = @internal_reader.each # iterator
-      while true
-        begin
-          r =  ir.next
+      @internal_reader.each do |r|
+        if  r.is_a? MARC::AlephSequential::ErrorRecord
+          logger.error(r.error)
+        else
           yield r
-        rescue  MARC::AlephSequential::Error => e
-          logger.error(e)
-          next
-        rescue StopIteration
-          break
         end
       end
     end
