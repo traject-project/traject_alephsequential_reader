@@ -32,6 +32,7 @@ module Traject
       @internal_reader.each do |r|
         if  r.is_a? MARC::AlephSequential::ErrorRecord
           logger.error(r.error)
+          next
         else
           yield r
         end
